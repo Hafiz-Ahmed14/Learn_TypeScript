@@ -12,3 +12,18 @@ lastName = "ahmed"
 isActive = true;
 
 console.log(`Your Id: ${userId}, userName : ${firstName} ${lastName}, Your account is: ${isActive}`);
+
+
+//Union Data types
+let User : string | Number | boolean
+
+User = 101;
+User = "Hafiz";
+User = true
+
+function displayName(User: string | number) {
+    console.log(User);
+}
+
+displayName("Hafiz");
+displayName(101);
